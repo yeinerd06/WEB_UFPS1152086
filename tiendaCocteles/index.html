@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tienda de Cocteles</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+
+<body onload="obtenerCategorias()">
+    <header>
+        <div>
+            <h1>Tienda de Cocteles</h1>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="listarCocteles.html">Listar cocteles</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="verCarrito.html">Ver carrito</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="botones">
+            <button type="button" onclick="categorias()">Categorias</button>
+            <button type="button" onclick="sinalcohol()">Sin Alcohol</button>
+            <button type="button" onclick="conalcohol()">Con Alcohol</button>
+            <button type="button" onclick="porLetra()">Por letra</button>
+            <button type="button" onclick="porIngrediente()">Por ingrediente</button>
+        </div>
+        <div id="ingresar">
+            <form id="formulario">
+                <label for="letra">Ingresa la letra inicial del coctel:</label>
+                <input type="text" id="letra" name="letra" required>
+            </form>
+            <form id="formIngrediente">
+                <label for="ingrediente">Ingresa el ingrediente del coctel:</label>
+                <input type="text" id="ingrediente" name="ingrediente" required>
+            </form>
+        </div>
+
+        <div id="divContenido">
+        </div>
+
+
+    </main>
+    <footer>
+        <div>
+            Programa de Ingenieria de Sistemas <br>
+            Programación web - 1 - 2023
+        </div>
+    </footer>
+
+
+    <script src='js/main.js'></script>
+</body>
+
+</html>
