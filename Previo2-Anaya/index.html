@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo7IngSistemas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header id="header">
+        <img src="img/menuiconwhite.png" alt="menu" class="menu" id="menu">
+        <div class="contenedor_logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="login.html">Iniciar Sesion</a>
+                </li>
+                <li>
+                    <a href="register.html">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="contenido">
+        <div class="slider">
+            <div>
+                <img src="img/logo.png" alt="">
+            </div>
+            <div>
+                <img src="img/logo2.png" alt="">
+            </div>
+            <div>
+                <img src="img/logo3.png" alt="">
+            </div>
+        </div>
+
+        <div class="productos">
+            <div class="producto">
+                <div class="contenedor">
+                    <img src="img/productos/lenovo_yoga_710.jpeg" alt="yoga">
+                    <div class="detalles">
+                        <h5> lenovo </h5>
+                        <h2>Yoga 710</h2>
+                        <h3>$799.990</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="contenedor">
+                    <img src="img/productos/lenovo_tablet.jpeg" alt="yoga">
+                    <div class="detalles">
+                        <h5> lenovo </h5>
+                        <h2>Tablet</h2>
+                        <h3>$199.990</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="contenedor">
+                    <img src="img/productos/iphone.jpeg" alt="iPhone">
+                    <div class="detalles">
+                        <h5>apple</h5>
+                        <h2>iPhone X</h2>
+                        <h3>$1.999.990</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="contenedor">
+                    <img src="img/productos/s9.jpeg" alt="s9">
+                    <div class="detalles">
+                        <h5> samsung </h5>
+                        <h2>Galaxy S9</h2>
+                        <h3>$1.099.990</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="contenedor">
+                    <img src="img/productos/macbook.jpeg" alt="Macbook">
+                    <div class="detalles">
+                        <h5>apple</h5>
+                        <h2>Macbook 13</h2>
+                        <h3>$15.999.990</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="marcas">
+            <img src="img/ufps.png" alt="ufps">
+            <img src="img/sist.png" alt="ing. sistemas">
+            <img src="img/divi.png" alt="divisist">
+            <img src="img/insta.png" alt="instagram">
+            <img src="img/faceb.png" alt="facebook">
+        </div>
+        <div class="logo">
+            <img src="img/Homer.jpg" alt="logo">
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".slider").bxSlider({
+                mode:"fade",
+                auto:true,
+                pause:2000
+            });
+        });
+    </script>
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
