@@ -1,0 +1,13 @@
+#output{
+ background-color: antiquewhite;   
+ height: 100px;
+ width: 400px;
+ padding: 10px;
+ border-color: black;
+ border-style: solid;
+}
+
+h1{
+    font-size: larger;
+    color: brown;
+}

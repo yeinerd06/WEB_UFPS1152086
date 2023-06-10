@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    
+</head>
+<body>
+    <form id="frmPrimos" name="frmPrimos" action="" method="post">
+        <label for="">Cantidad números primos:</label>
+        <input type="text" name="quota" id="quota" value="1000000"/>
+
+        <input type="button" value="Generar primos" id="generar" onclick="generarClick()"/>
+        <input type="button" value="Reiniciar" id="reiniciar" onclick="reiniciarClick()"/>
+        <input type="button" value="Callback" id="callback" onclick="calcular(10,50,mostrarMensaje)"/>
+        <input type="button" value="Callback 2" id="callback" onclick="calcular(100,50,mostrarMensajeTxt)"/>
+        <input type="button" value="Ajax" id="callback" onclick="obtenerFoto(mostrarMensajeDiv)"/>
+    </form>
+    <br>
+    <div id="output">
+        Acá se muestra el resultado.
+    </div>
+    <br>
+    <textarea id="txt" rows="4" cols="55">Digite acá una vez de click en el boton generar.</textarea>
+    <br>
+    <div id="divRta"></div>
+</body>
+<script src='js/main.js'></script>
+</html>
