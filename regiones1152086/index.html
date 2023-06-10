@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sitios Turisticos De Colombia</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+
+</head>
+
+<body onload="infoGeneral()">
+    <header>
+        <div class="contenedor_logo">
+            <img src="img/bandera.png" alt="logo" class="logo">
+        </div>
+        <div>
+            <h1>Sitios Turisticos De Colombia</h1>
+        </div>
+    </header>
+    <main>
+        <div id="botones">
+            <button type="button" onclick="porRegiones()">Por Regiones</button>
+            <button type="button" onclick="sinalcohol()">Sin Alcohol</button>
+            <button type="button" onclick="conalcohol()">Con Alcohol</button>
+            <button type="button" onclick="porLetra()">Por letra</button>
+            <button type="button" onclick="porIngrediente()">Por ingrediente</button>
+        </div>
+        <div id="ingresar">
+            <form id="formulario">
+                <label for="letra">Ingresa la letra inicial del coctel:</label>
+                <input type="text" id="letra" name="letra" required>
+            </form>
+            <form id="formIngrediente">
+                <label for="ingrediente">Ingresa el ingrediente del coctel:</label>
+                <input type="text" id="ingrediente" name="ingrediente" required>
+            </form>
+        </div>
+        <div id="combobox">
+            <label for="region">Seleccione una región:</label>
+            <select id="regiones">
+                <option value="0">Seleccione</option>
+                <option value="4">Amazonia</option>
+                <option value="5">Andina</option>
+                <option value="1">Caribe</option>
+                <option value="6">Insular</option>
+                <option value="3">Orinoquia</option>
+                <option value="2">Pacífica</option>
+            </select>
+
+            <button type="button" onclick="btnCombobox()">Buscar Dptos</button>
+        </div>
+
+        <h2 id="hContenido"></h2>
+        <div id="divContenido">
+        </div>
+
+
+    </main>
+    <footer>
+        <div>
+            Programa de Ingenieria de Sistemas <br>
+            Programación web - 1 - 2023
+        </div>
+    </footer>
+
+
+    <script src='js/main.js'></script>
+</body>
+
+</html>
